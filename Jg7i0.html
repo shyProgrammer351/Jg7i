@@ -4,14 +4,422 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="../layout.css">
+		<script type="text/javascript" src="../functions.js"></script>
+		<script></script>
 	</head>
 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false">
 		<div id = "container">
 			<div id = "titleBox"> JAVA 프로그래밍 </div>
-			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><ul></ul><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div> 
+			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><ul><li><a href='../Jg7i/Jg7i1.html'>채팅(서버-클라이언트)</a></li><li><a href='../Jg7i/Jg7i2.html'>가위바위보(서버)</a></li><li><a href='../Jg7i/Jg7i3.html'>가위바위보(클라이언트)</a></li><li><a href='../Jg7i/Jg7i4.html'>구슬찾기(서버)</a></li><li><a href='../Jg7i/Jg7i5.html'>구슬찾기(클라이언트)</a></li></ul><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div> 
 			<div id = "contentBox">
-				<h3> </h3>
-<br>준비중입니다 
+				<h3>17. 네트워크(1:1)</h3>
+<h4>클라이언트-서버 기본 구조</h4>
+<table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc; font-size: 14px;'>
+	<tr>
+	<tr>
+		<td style='width:360px;background-color:silver;text-align:center;'>
+			서버 &nbsp; 
+		</td>
+		<td style='width:35px;'>
+		</td>
+		<td style='background-color:silver;text-align:center;'>
+			 &nbsp; 클라이언트 
+		</td>
+	</tr>
+	<tr>
+		<td style='border:2px solid skyblue; text-align:right;'>
+			서버 소켓 연결 &nbsp; 
+		</td>
+	</tr>
+	<tr style='background-color:skyblue;'>
+		<td style='text-align:right;'>
+			<br>연결 활성화 &nbsp; 
+		</td>
+		<td style='text-align:center;'>
+			◀---
+		</td>
+		<td>
+			 &nbsp; 연결 요청
+			 <br> &nbsp; 
+		</td>
+	</tr>
+	<tr style='background-color:skyblue;'>
+		<td style='text-align:right;'>
+			네트워크 입출력 초기화 &nbsp; 
+		</td>
+		<td style='text-align:center;'>
+			◀-▶
+		</td>
+		<td>
+			 &nbsp; 네트워크 입출력 초기화
+		</td>
+	</tr>
+	<tr>
+		<td style='text-align:right;'>
+			데이터 기다리기 &nbsp; 
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+	</tr>
+	<tr style='background-color:skyblue;'>
+		<td style='text-align:right;'>
+			<br>
+			데이터 받기 &nbsp; 
+		</td>
+		<td style='text-align:center;'>
+			◀---
+		</td>
+		<td>
+			 &nbsp; 데이터 보내기
+			 <br> &nbsp; 
+		</td>
+	</tr>
+	<tr>
+		<td style='text-align:right;'>
+			&nbsp;
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			데이터 기다리기 &nbsp; 
+		</td>
+	</tr>
+	<tr style='background-color:skyblue;'>
+		<td style='text-align:right;'>
+			데이터 보내기 &nbsp; 
+			<br> &nbsp; 
+		</td>
+		<td style='text-align:center;'>
+			---▶
+		</td>
+		<td>
+			 <br>
+			 &nbsp; 데이터 받기 
+		</td>
+	</tr>
+	<tr style='border:2px solid skyblue;'>
+		<td style='border:2px solid skyblue;text-align:right;'>
+			네트워크 종료 &nbsp; 
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td style='border:2px solid skyblue;'>
+			 &nbsp; 네트워크 종료
+		</td>
+	</tr>
+</table>
+<br>
+<table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc; font-size: 14px;'>
+	<tr>
+		<td style='width:360px;background-color:silver;text-align:center;'>
+			서버 &nbsp; 
+		</td>
+		<td style='width:35px;'>
+		</td>
+		<td style='background-color:silver;text-align:center;'>
+			 &nbsp; 클라이언트 
+		</td>
+	</tr>
+	<tr>
+		<td>
+public class NaiveChatServer
+<br>{
+<br>&nbsp;public static void main(String[] args) {
+<br>&nbsp;&nbsp;try {
+<br>&nbsp;&nbsp;&nbsp;System.out.println( "[Client]가 대화를 시작할 때까지 잠시만 기다려 주세요" );
+		</td>
+		<td>
+		</td>
+		<td>
+public class NaiveChatClient
+<br>{
+<br>&nbsp;public static void main(String[] args) {
+<br>&nbsp;&nbsp;try {
+<br>&nbsp;&nbsp;&nbsp;System.out.println( "[Server]와 함께 얘기 해요 바로 시작해 주세요 bye를 입력하면 종료됩니다" );
+		</td>
+	</tr>
+	<tr>
+		<td style='border:2px solid skyblue;'>
+&nbsp;&nbsp;&nbsp;ServerSocket serverSocket = new ServerSocket(7700);
+		</td>
+	</tr>
+	<tr style='background-color:skyblue;'>
+		<td>
+<br>&nbsp;&nbsp;&nbsp;ServerSocket socket = serverSocket.accept();
+		</td>
+		<td style='text-align:center;'>
+			◀---
+		</td>
+		<td>
+&nbsp;&nbsp;&nbsp;Socket socket = new Socket( "localhost", 7700 );
+<br>&nbsp;
+		</td>
+	</tr>
+	<tr style='background-color:skyblue;'>
+		<td>
+&nbsp;&nbsp;&nbsp;BufferedReader networkIn = new BufferedReader( new InputStreamReader( socket.getInputStream() ) );
+<br>&nbsp;&nbsp;&nbsp;PrintWriter networkOut = new PrintWriter( socket.getOutputStream(), true );
+<br>&nbsp;&nbsp;&nbsp;Scanner scan = new Scanner( System.in );
+		</td>
+		<td style='text-align:center;'>
+			◀-▶
+		</td>
+		<td>
+&nbsp;&nbsp;&nbsp;BufferedReader networkIn = new BufferedReader( new InputStreamReader( socket.getInputStream() ) );
+<br>&nbsp;&nbsp;&nbsp;PrintWriter networkOut = new PrintWriter( socket.getOutputStream(), true );
+<br>&nbsp;&nbsp;&nbsp;Scanner scan = new Scanner( System.in );
+		</td>
+	</tr>
+	<tr>
+		<td>
+			&nbsp;&nbsp;&nbsp;while( true ) {
+<br>&nbsp;
+<br>&nbsp;
+		</td>
+		<td>
+		</td>
+		<td>
+			&nbsp;&nbsp;&nbsp;while( true ) {
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.print( "[Client] " );
+<br>&nbsp;&nbsp;&nbsp;&nbsp;String clientMessage = scan.nextLine();
+		</td>
+	</tr>
+	<tr style='background-color:skyblue;'>
+		<td>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;String clientMessage = networkIn.readLine();
+		</td>
+		<td style='text-align:center;'>
+			◀---
+		</td>
+		<td>
+&nbsp;&nbsp;&nbsp;&nbsp;networkOut.println( clientMessage );
+<br>&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println( "[Client] " + clientMessage );
+<br>&nbsp;&nbsp;&nbsp;&nbsp;if( clientMessage.equals( "bye" ) ) {
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("[Client]가 대화를 종료했습니다");
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.print( "[Server] " );
+<br>&nbsp;&nbsp;&nbsp;&nbsp;String serverMessage = scan.nextLine();
+		</td>
+		<td>
+		</td>
+		<td>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;if( clientMessage.equals( "bye" ) ) {
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("[Client]가 대화를 종료했습니다");
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>&nbsp;
+<br>&nbsp;
+		</td>
+	</tr>
+	<tr style='background-color:skyblue;'>
+		<td>
+&nbsp;&nbsp;&nbsp;&nbsp;networkOut.println( serverMessage );
+<br>&nbsp;
+		</td>
+		<td style='text-align:center;'>
+			---▶
+		</td>
+		<td>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;String serverMessage = networkIn.readLine();
+		</td>
+	<tr>
+		<td>
+<br>
+&nbsp;&nbsp;&nbsp;}
+		</td>
+		<td>
+		</td>
+		<td>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println( "[Server] " + serverMessage );
+<br>&nbsp;&nbsp;&nbsp;}
+		</td>
+	</tr>
+	</tr>
+	<tr>
+		<td style='border:2px solid skyblue;'>
+&nbsp;&nbsp;&nbsp;networkIn.close();
+<br>&nbsp;&nbsp;&nbsp;networkOut.close();
+<br>&nbsp;&nbsp;&nbsp;socket.close();
+<br>&nbsp;&nbsp;&nbsp;serverSocket.close();
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td style='border:2px solid skyblue;'>
+&nbsp;&nbsp;&nbsp;networkIn.close();
+<br>&nbsp;&nbsp;&nbsp;networkOut.close();
+<br>&nbsp;&nbsp;&nbsp;socket.close();
+<br>&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td>
+&nbsp;&nbsp;&nbsp;scan.close();
+<br>&nbsp;&nbsp;} catch ( Exception e ) {
+<br>&nbsp;&nbsp;&nbsp;e.printStackTrace();
+<br>&nbsp;&nbsp;}
+<br>&nbsp;}
+<br>}
+		</td>
+		<td>
+		</td>
+		<td>
+&nbsp;&nbsp;&nbsp;scan.close();
+<br>&nbsp;&nbsp;} catch ( Exception e ) {
+<br>&nbsp;&nbsp;&nbsp;e.printStackTrace();
+<br>&nbsp;&nbsp;}
+<br>&nbsp;}
+<br>}
+		</td>
+	</tr>
+</table>
+
+<br>
+<br><span style='color:red;'>ServerSocket</span> &nbsp; 서버에서 네트워크를 개설하기 위한 소켓
+<br>
+<br><span style='color:red;'>Socket</span> &nbsp; 특정 IP주소와 포트번호의 서버에 클라이언트가 연결 요청하면 서버는 수락하고 서버-클라이언트를 1:1로 연결하기 위한 네트워크 소켓
+<br>
+<br><span style='color:red;'>accept</span> &nbsp; 클라이언트에서 서버로 연결 요청시 이를 받아들여 연결 활성화하며, public Socket accept()에서 반환값은 클라이언트와 1:1로 연결된 소켓
+
+<br>&nbsp;
+<h4>멀티스레드 기반 클라이언트-서버 구조</h4>
+
+단일스레드 기반클라이언트-서버 구조에서는 데이터를 보내고 받는 순서를 반드시 지켜야 한다는 제한 발생 
+<br>클라이언트는 데이터를 보낸 후 데이터를 받을 수 있고, 서버는 데이터를 받은 후 데이터를 보낼 수 있음
+<br>네트워크 데이터를 받아서 처리하는 전용 스레드를 사용하면, 클라이언트와 서버는 데이터 보내기만 집중 가능 
+<br>&nbsp;
+
+<table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc; font-size: 14px;'>
+	<tr>
+	<tr>
+		<td style='width:280px;background-color:silver;text-align:center;'>
+			서버(메인 스레드) &nbsp; 
+		</td>
+		</td>
+		<td>
+		<td style='width:35px;'>
+		</td>
+		</td>
+		<td>
+		<td style='width:280px;background-color:silver;text-align:center;'>
+			 &nbsp; 클라이언트(메인 스레드) 
+		</td>
+	</tr>
+	<tr>
+		<td style='border:2px solid skyblue; text-align:right;'>
+			서버 소켓 연결 &nbsp; 
+		</td>
+	</tr>
+	<tr>
+		<td style='background-color:skyblue;text-align:right;'>
+			<br>연결 활성화 &nbsp; 
+		</td>
+		<td>
+		</td>
+		<td style='background-color:skyblue;text-align:center;'>
+			◀---
+		</td>
+		<td>
+		</td>
+		<td style='background-color:skyblue;'>
+			 &nbsp; 연결 요청
+			 <br> &nbsp; 
+		</td>
+	</tr>
+	<tr>
+		<td style='background-color:skyblue;text-align:right;'>
+			네트워크 입출력 초기화 &nbsp; 
+		</td>
+		<td>
+		</td>
+		<td style='background-color:skyblue;text-align:center;'>
+			◀-▶
+		</td>
+		<td>
+		</td>
+		<td style='background-color:skyblue;'>
+			 &nbsp; 네트워크 입출력 초기화
+		</td>
+	</tr>
+	<tr>
+		<td style='border:2px solid skyblue; text-align:right;'>
+			네트워크 데이터 받는 스레드 생성 &nbsp;
+		</td>
+		<td style='background-color:silver;text-align:center;'>
+			스레드
+		</td>
+		<td>
+		</td>
+		<td style='background-color:silver;text-align:center;'>
+			스레드
+		</td>
+		<td style='border:2px solid skyblue;'>
+			&nbsp; 네트워크 데이터 받는 스레드 생성 
+		</td>
+	</tr>
+	<tr>
+		<td>
+		</td>
+		<td style='background-color:skyblue;text-align:right;'>
+			<br>
+			데이터 받기
+		</td>
+		<td style='background-color:skyblue;text-align:center;'>
+			◀---
+		</td>
+		<td>
+		</td>
+		<td style='background-color:skyblue;'>
+			 &nbsp; 데이터 보내기
+			 <br> &nbsp; 
+		</td>
+	</tr>
+	<tr>
+		<td style='background-color:skyblue;text-align:right;'>
+			 데이터 보내기 &nbsp; 
+			 <br> &nbsp; 
+		</td>
+		<td>
+		</td>
+		<td style='background-color:skyblue;text-align:center;'>
+			---▶
+		</td>
+		<td style='background-color:skyblue;'>
+			<br>
+			 데이터 받기
+		</td>
+		<td>
+		</td>
+	</tr>
+	<tr style='border:2px solid skyblue;'>
+		<td style='border:2px solid skyblue;text-align:right;'>
+			스레드 종료 &nbsp; 
+			<br>네트워크 종료 &nbsp; 
+		</td>
+		<td>
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+		</td>
+		<td style='border:2px solid skyblue;'>
+			 &nbsp; 스레드 종료
+			<br>&nbsp; 네트워크 종료
+		</td>
+	</tr>
+</table>
+<br>
 
 
 				<br><br><br><br><br><br><br><br> &nbsp; 
