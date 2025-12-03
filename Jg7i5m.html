@@ -51,8 +51,8 @@
 <pre style='margin:0;padding:0;'><a href='#N5e'>N5e</a>  }</pre><br>
 <pre style='margin:0;padding:0;'><a href='#PN51'>PN51</a>   for ( String message = null; ( message = </pre><br>
 <pre style='margin:0;padding:0;'><a href='#PN55'>PN55</a>     super.ready();</pre><br>
-<pre style='margin:0;padding:0;'><a href='#P3b'>P3b</a>  public void show( int playerA, int playerB ) {</pre><br>
-<pre style='margin:0;padding:0;'><a href='#P3e'>P3e</a>  }</pre>
+<pre style='margin:0;padding:0;'><a href='#P2b'>P2b</a>  public void ready() {</pre><br>
+<pre style='margin:0;padding:0;'><a href='#P2e'>P2e</a>  }</pre>
 ⑦ &nbsp; <img src='https://shyprogrammer351.github.io/ig3i/rpsGame/network/network_06.jpg' width='200' /><br>&nbsp; <br>
 
 <pre style='margin:0;padding:0;'><a href='#PN56'>PN56</a>     counterpart = Integer.parseInt( message.replace( header, "" ).trim() );</pre><br>
@@ -66,7 +66,9 @@
 ⑨ &nbsp; <img src='https://shyprogrammer351.github.io/ig3i/rpsGame/network/sequence_rps_client_send.jpg' width='500' /><br>&nbsp; <br>
 
 <pre style='margin:0;padding:0;'><a href='#PN4b'>PN4b</a>  public void actionPerformed( ActionEvent event ) {</pre><br>
-<pre style='margin:0;padding:0;'><a href='#PN41'>PN41</a>   super.show( player, counterpart );</pre><br> <br>
+<pre style='margin:0;padding:0;'><a href='#PN41'>PN41</a>   super.show( player, counterpart );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#P3b'>P3b</a>  public void show( int playerA, int playerB ) {</pre><br>
+<pre style='margin:0;padding:0;'><a href='#P3e'>P3e</a>  }</pre>
 ⑩ &nbsp; <img src='https://shyprogrammer351.github.io/ig3i/rpsGame/network/network_08.jpg' width='200' /><br>&nbsp; <br>
 <pre style='margin:0;padding:0;'><a href='#PN42'>PN42</a>   network.write( header + " " + player );</pre><br>
 <pre style='margin:0;padding:0;'><a href='#N6b'>N6b</a>  public void write( String data ) {</pre><br>
