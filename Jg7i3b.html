@@ -1,242 +1,64 @@
-<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = [ [ "localhost" ], [ "implements","implement" ], [ "Runnable","Runable" ], [ "try" ], [ "for" ], [ "if" ], [ "catch" ], [ "run" ], [ "for" ], [ "if" ], [ "else" ], [ "ServerSocket" ], [ "Socket" ], [ "BufferedReader" ], [ "PrintWriter" ], [ "Thread" ], [ "Runnable","Runable" ], [ "try" ], [ "ServerSocket" ], [ "accept" ], [ "catch" ], [ "Runnable","Runable" ], [ "try" ], [ "Socket" ], [ "catch" ], [ "Runnable","Runable" ], [ "try" ], [ "BufferedReader" ], [ "InputStreamReader" ], [ "getInputStream" ], [ "PrintWriter" ], [ "getOutputStream" ], [ "Thread" ], [ "start" ], [ "catch" ], [ "try" ], [ "if" ], [ "readLine" ], [ "catch" ], [ "try" ], [ "if" ], [ "catch" ], [ "if" ], [ "Thread" ], [ "else" ], [ "try" ], [ "if" ], [ "if" ], [ "if" ], [ "if" ], [ "if" ], [ "catch" ], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/스레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><ul><li><a href='../Jg7i/Jg7i1.html'>채팅초안(서버-클라이언트)</a></li><li><a href='../Jg7i/Jg7i2.html'>채팅(서버)</a></li><li><a href='../Jg7i/Jg7i3.html'>채팅(클라이언트)</a></li><ul><li><a href='Jg7i3.html'>코드읽기</a></li><li><a href='Jg7i3a.html'>알고리즘</a></li><li><a href='Jg7i3k.html'>키워드</a></li><li><a href='Jg7i3b.html'>빈칸채우기</a></li><li><a href='Jg7i3s.html'>실행순서</a></li><li><a href='Jg7i3m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter17/MultiThreadChatClient.java' target='code'>소스코드</a></li></ul><li><a href='../Jg7i/Jg7i4.html'>가위바위보(서버)</a></li><li><a href='../Jg7i/Jg7i5.html'>가위바위보(클라이언트)</a></li></ul><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀호출</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>서버와 클라이언트가 멀티스레드를 바탕으로 순서에 상관없이 자유롭게 대화할 수 있는 채팅 문제입니다 이를 해결하는 다음 프로그램에 대해 빈칸을 채우세요 </pre> 				
-<div style='font-family:monospace;line-height:1;'>
-<table style='width:790px; margin:0; padding:0px; font-size: 12px;'>
-	<tr>
-		<td style='background-color:silver;text-align:center;'>
-			서버 
-		</td>
-		<td style='background-color:silver;text-align:center;'>
-			클라이언트  
-		</td>
-	</tr>
-	<tr>
-		<td style='width:395px; margin:0; padding:3px; border:1px solid #bcbcbc;'>
-[Server]님이 들어오셨습니다. 대화(종료시 quit)를 입력하세요 <br>[Client]님이 들어오실때까지 잠시만 기다려주세요 <br>[Client]님이 들어오셨습니다 <br>[Client]안녕하세요 <br><b><span style='color:rgb(255,0,0);'>반갑습니다</span></b> <br>[Client]님이 나가셨습니다 <br><b><span style='color:rgb(255,0,0);'>quit</span></b> <br>[Server]님이 나가셨습니다
-		</td>
-		<td style='width:395px; margin:0; padding:3px; border:1px solid #bcbcbc;'>
-[Client]님이 들어오셨습니다. 대화(종료시 quit)를 입력하세요 <br>[Server]님이 들어오셨습니다 <br><b><span style='color:rgb(255,0,0);'>안녕하세요</span></b> <br>[Server]반갑습니다 <br><b><span style='color:rgb(255,0,0);'>quit</span></b> <br>[Client]님이 나가셨습니다 <br> <br> &nbsp;
-		</td>
-	</tr>
-</table>
-</div> 
-</pre><br><div style='font-family:monospace;line-height:1; margin:0; padding:0;'><table style='width:790px; margin:0; padding:0px; font-size: 12px;'>
-	<tr>
-		<td style='background-color:silver;text-align:center;'>
-			서버 
-		</td>
-		<td style='background-color:silver;text-align:center;'>
-			클라이언트  
-		</td>
-	</tr>
-	<tr>
-		<td style='width:395px; margin:0; padding:3px; border:1px solid #bcbcbc;'>
-[Server]님이 들어오셨습니다. 대화(종료시 quit)를 입력하세요 <br>[Client]님이 들어오실때까지 잠시만 기다려주세요 <br>[Client]님이 들어오셨습니다 <br>[Client]안녕하세요 <br><b><span style='color:rgb(255,0,0);'>반갑습니다</span></b> <br>[Client]오랜만이네요 <br>[Client]그동안 잘 지내셨어요? <br><b><span style='color:rgb(255,0,0);'>덕분에 잘 지내고 있습니다</span></b> <br><b><span style='color:rgb(255,0,0);'>신경써 주셔서 감사합니다</span></b> <br>[Client]님이 나가셨습니다 <br><b><span style='color:rgb(255,0,0);'>quit</span></b> <br>[Server]님이 나가셨습니다
-		</td>
-		<td style='width:395px; margin:0; padding:3px; border:1px solid #bcbcbc;'>
-[Client]님이 들어오셨습니다. 대화(종료시 quit)를 입력하세요 <br>[Server]님이 들어오셨습니다 <br><b><span style='color:rgb(255,0,0);'>안녕하세요</span></b> <br>[Server]반갑습니다 <br><b><span style='color:rgb(255,0,0);'>오랜만이네요</span></b> <br><b><span style='color:rgb(255,0,0);'>그동안 잘 지내셨어요?</span></b> <br>[Server]덕분에 잘 지내고 있습니다 <br>[Server]신경써 주셔서 감사합니다 <br><b><span style='color:rgb(255,0,0);'>quit</span></b> <br>[Client]님이 나가셨습니다 <br> <br> &nbsp;
-		</td>
-	</tr>
-</table></div> 
-</pre><br><div style='font-family:monospace;line-height:1; margin:0; padding:0;'><table style='width:790px; margin:0; padding:0px; font-size: 12px;'>
-	<tr>
-		<td style='background-color:silver;text-align:center;'>
-			서버 
-		</td>
-		<td style='background-color:silver;text-align:center;'>
-			클라이언트  
-		</td>
-	</tr>
-	<tr>
-		<td style='width:395px; margin:0; padding:3px; border:1px solid #bcbcbc;'>
-[Server]님이 들어오셨습니다. 대화(종료시 quit)를 입력하세요 <br>[Client]님이 들어오실때까지 잠시만 기다려주세요 <br>[Client]님이 들어오셨습니다 <br>[Client]안녕하세요 <br><b><span style='color:rgb(255,0,0);'>반갑습니다</span></b> <br>[Client]오랜만이네요 <br>[Client]그동안 잘 지내셨어요? <br><b><span style='color:rgb(255,0,0);'>덕분에 잘 지내고 있습니다</span></b> <br><b><span style='color:rgb(255,0,0);'>신경써 주셔서 감사합니다</span></b> <br>[Client]앗~  <br>[Client]지금 나가봐야 할 것 같아요  <br>[Client]죄송합니다 <br><b><span style='color:rgb(255,0,0);'>다음에 뵈요</span></b> <br>[Client]님이 나가셨습니다 <br><b><span style='color:rgb(255,0,0);'>quit</span></b> <br>[Server]님이 나가셨습니다
-		</td>
-		<td style='width:395px; margin:0; padding:3px; border:1px solid #bcbcbc;'>
-[Client]님이 들어오셨습니다. 대화(종료시 quit)를 입력하세요 <br>[Server]님이 들어오셨습니다 <br><b><span style='color:rgb(255,0,0);'>안녕하세요</span></b> <br>[Server]반갑습니다 <br><b><span style='color:rgb(255,0,0);'>오랜만이네요</span></b> <br><b><span style='color:rgb(255,0,0);'>그동안 잘 지내셨어요?</span></b> <br>[Server]덕분에 잘 지내고 있습니다 <br>[Server]신경써 주셔서 감사합니다 <br><b><span style='color:rgb(255,0,0);'>앗~</span></b> <br><b><span style='color:rgb(255,0,0);'>지금 나가봐야 할 것 같아요</span></b> <br><b><span style='color:rgb(255,0,0);'>죄송합니다</span></b> <br>[Server]다음에 뵈요 <br><b><span style='color:rgb(255,0,0);'>quit</span></b> <br>[Client]님이 나가셨습니다 <br> <br> &nbsp;
-		</td>
-	</tr>
-</table></div> 
-</pre><br>  	  				<h4>코드 빈칸 채우기</h4> 				<pre style='white-space:pre;border:1px'>import chat.ChatNetwork; 
- 
-public class MultiThreadChatClient 
-{ 
-	public static void main(String[] args) { 
-		new ChatNetwork( "<input id='blank0' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='9' onchange='sP3f6(0)'>" ); 
-	} 
-} 
-package chat; 
-import java.util.Scanner; 
-import network.Network; 
- 
-public class ChatNetwork <input id='blank1' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='10' onchange='sP3f6(1)'> <input id='blank2' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='8' onchange='sP3f6(2)'>  
-{ 
- private Network network; 
- 
- public ChatNetwork() { 
-  System.out.println( "[Server]님이 들어오셨습니다. 대화(종료시 quit)를 입력하세요" ); 
-  System.out.println( "[Client]님이 들어오실때까지 잠시만 기다려주세요" ); 
- 
-  network =  
-            new Network(); 
-  network.connectAsServer( this ); 
-  network.write( "[Server]님이 들어오셨습니다" ); 
-  this.write( "[Server]" ); 
- } 
- 
- public ChatNetwork( String serverIP ) { 
-  System.out.println( "[Client]님이 들어오셨습니다. 대화(종료시 quit)를 입력하세요" ); 
- 
-  network =  
-            new Network(); 
-  network.connectAsClient( serverIP, this ); 
-  network.write( "[Client]님이 들어오셨습니다" ); 
-  this.write( "[Client]" ); 
- } 
-  
- public void write( String id ) { 
-  <input id='blank3' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(3)'> { 
-   Scanner scan = new Scanner( System.in ); 
-   <input id='blank4' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(4)'> ( String message = null; ( message =  
-                                            scan.nextLine() ) != null; ) { 
-    <input id='blank5' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(5)'>( message.contains( "quit" ) ) { 
-     System.out.println( id + "님이 나가셨습니다" ); 
-     network.write( id + "님이 나가셨습니다" ); 
-     network.write( id + message ); 
-     break; 
-    } 
-    network.write( id + message ); 
-   } 
-   scan.close(); 
-  } <input id='blank6' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(6)'> ( Exception e ) { 
-   e.printStackTrace(); 
-  } 
- } 
- 
- @Override 
- public void <input id='blank7' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(7)'>() { 
-  <input id='blank8' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(8)'> ( String message = null; ( message =  
-                                           network.read() ) != null; ) { 
-   <input id='blank9' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(9)'>( message.contains( "quit" ) ) { 
-    System.out.println( message ); 
-    network.write( message ); 
-    break; 
-   } 
-   <input id='blank10' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(10)'> { 
-    System.out.println( message ); 
-   } 
-  } 
-  network.close(); 
- } 
-} 
-package network; 
-import java.io.*; 
-import java.net.*; 
- 
-public class Network  
-{ 
-	public static final int serverPort = 7700; 
-	protected <input id='blank11' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='12' onchange='sP3f6(11)'> serverSocket;  
-	protected <input id='blank12' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='6' onchange='sP3f6(12)'> socket;  
-	private <input id='blank13' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='14' onchange='sP3f6(13)'> in; 
-	private <input id='blank14' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='11' onchange='sP3f6(14)'> out;  
-	private <input id='blank15' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='6' onchange='sP3f6(15)'> waitForCounterpart;  
- 
-	public Network() {	 
-		serverSocket = null; 
-		socket = null; 
-		in = null; 
-		out = null; 
-		waitForCounterpart = null; 
-	} 
-	 
-	public void connectAsServer( <input id='blank16' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='8' onchange='sP3f6(16)'> obj ) { 
-		<input id='blank17' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(17)'> {  
-			serverSocket = new <input id='blank18' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='12' onchange='sP3f6(18)'>( serverPort );  
-			socket =  
-			         serverSocket.<input id='blank19' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='6' onchange='sP3f6(19)'>();    
-			connectInOut( obj );   
-		} <input id='blank20' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(20)'> ( Exception e ) { 
-			e.printStackTrace(); 
-		} 
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = [ [ "String[]" ], [ "throws","throw" ], [ "IOException" ], [ "String" ], [ "BufferedReader" ], [ "BufferedReader" ], [ "FileReader" ], [ "File" ], [ "String" ], [ "readLine" ], [ "!=" ], [ "null" ], [ "String[]" ], [ "split" ], [ "if" ], [ "length","length()" ], [ "break","break;" ], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=1><li><a href='../Jf1i/Jf1i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf2i/Jf2i0.html'>출력</a></li><li><a href='../Jf3i/Jf3i0.html'>입력</a></li><li><a href='../Jf4i/Jf4i0.html'>변수</a></li><li><a href='../Jf5i/Jf5i0.html'>연산자</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf7i/Jf7i0.html'>선택문(if)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(while)</a></li><li><a href='../Jf9i/Jf9i0.html'>반복문(for)</a></li><li><a href='../Jg0i/Jg0i0.html'>배열</a></li><li><a href='../Jg1i/Jg1i0.html'>문자열/컬렉션</a></li><li><a href='../Jg2i/Jg2i0.html'>클래스/패키지</a></li><li><a href='../Jg3i/Jg3i0.html'>상속/다형성</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI기초</a></li><li><a href='../Jg5i/Jg5i0.html'>GUI응용</a></li><li><a href='../Jg6i/Jg6i0.html'>예외/스레드</a></li><li><a href='../Jg7i/Jg7i0.html'>파일입출력</a></li><ul><li><a href='../Jg7i/Jg7i1.html'>영한사전</a></li><li><a href='../Jg7i/Jg7i2.html'>파일 복사</a></li><li><a href='../Jg7i/Jg7i3.html'>날씨 뉴스</a></li><ul><li><a href='Jg7i3.html'>코드읽기</a></li><li><a href='Jg7i3s.html'>실행순서</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter17/WeatherFile.java' target='code'>소스코드</a></li></ul><li><a href='../Jg7i/Jg7i4.html'>미로 맵 파일 출력</a></li><li><a href='../Jg7i/Jg7i5.html'>게임 순위</a></li></ul><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:1)</a></li><li><a href='../Jg9i/Jg9i0.html'>네트워크(1:n)</a></li><li><a href='../Jh0i/Jh0i0.html'>열거형/제네릭</a></li><li><a href='../Jh1i/Jh1i0.html'>재귀호출</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>파일에서 날씨 정보를 추출하고, 그 추출 정보를 바탕으로 날씨 뉴스를 생성하는 문제입니다 이를 해결하는 다음 프로그램에 대해 빈칸을 채우세요 참고로, 날씨 정보는 아래와 같이 '정보 [ 탭 ] 정보 [ 탭 ] 정보 [ 탭 ] ...'의 구조로 저장되어 있습니다. 
+<pre>
+--------- 파일 weather1.txt의 내용 --------- 
+1	15	목	대설특보	눈길	-4	-4	-1	0	4	4	1	3	2	2	4	5
+6	29	금	호우특보	빗길	21	21	23	23	22	21	29	30	31	31	26	28
+1	3	목	강풍주의보	안전	-8	-14	-7	-4	-2	2	2	2	4	7	8	7
+--------- 파일 weather2.txt의 내용 --------- 
+6	29	금	호우특보	빗길	21	21	23	23	22	21	29	30	31	31	26	28
+--------- 파일 weather3.txt의 내용 --------- 
+1	3	목	강풍주의보	안전	-8	-14	-7	-4	-2	2	2	2	4	7	8	7
+</pre></pre> 				<pre class='selectable'>파일이름을 입력하세요: <b><span style='color:rgb(0,0,255);'>C:\Users\user\Downloads\weather1.txt</span></b>
+1월 15일 목요일 오늘의 날씨입니다.
+주요 지역의 아침 최저기온은 서울 -4도, 춘천 -4도, 대전 -1도, 광주 0도, 부산 4도, 제주 4도입니다.
+낮 최고기온은 서울 1도, 춘천 3도, 대전 2도, 광주 2도, 부산 4도, 제주 5도입니다.
+대설특보가 발효 중인 지역에서는 눈길 운전에 주의해 주시기 바랍니다.
+	
+6월 29일 금요일 오늘의 날씨입니다.
+주요 지역의 아침 최저기온은 서울 21도, 춘천 21도, 대전 23도, 광주 23도, 부산 22도, 제주 21도입니다.
+낮 최고기온은 서울 29도, 춘천 30도, 대전 31도, 광주 31도, 부산 26도, 제주 28도입니다.
+호우특보가 발효 중인 지역에서는 빗길 운전에 주의해 주시기 바랍니다.
+	
+1월 3일 목요일 오늘의 날씨입니다.
+주요 지역의 아침 최저기온은 서울 -8도, 춘천 -14도, 대전 -7도, 광주 -4도, 부산 -2도, 제주 2도입니다.
+낮 최고기온은 서울 2도, 춘천 2도, 대전 4도, 광주 7도, 부산 8도, 제주 7도입니다.
+강풍주의보가 발효 중인 지역에서는 안전 운전에 주의해 주시기 바랍니다. 
+</pre><br><pre class='selectable'>파일이름을 입력하세요: <b><span style='color:rgb(0,0,255);'>C:\Users\user\Downloads\weather2.txt</span></b>
+6월 29일 금요일 오늘의 날씨입니다.
+주요 지역의 아침 최저기온은 서울 21도, 춘천 21도, 대전 23도, 광주 23도, 부산 22도, 제주 21도입니다.
+낮 최고기온은 서울 29도, 춘천 30도, 대전 31도, 광주 31도, 부산 26도, 제주 28도입니다.
+호우특보가 발효 중인 지역에서는 빗길 운전에 주의해 주시기 바랍니다. 
+</pre><br><pre class='selectable'>파일이름을 입력하세요: <b><span style='color:rgb(0,0,255);'>C:\Users\user\Downloads\weather3.txt</span></b>
+1월 3일 목요일 오늘의 날씨입니다.
+주요 지역의 아침 최저기온은 서울 -8도, 춘천 -14도, 대전 -7도, 광주 -4도, 부산 -2도, 제주 2도입니다.
+낮 최고기온은 서울 2도, 춘천 2도, 대전 4도, 광주 7도, 부산 8도, 제주 7도입니다.
+강풍주의보가 발효 중인 지역에서는 안전 운전에 주의해 주시기 바랍니다. 
+</pre><br>  	  				<h4>코드 빈칸 채우기</h4> 				<pre style='white-space:pre;border:1px'>import java.io.*;  
+import java.util.Scanner;  
+	  
+public class WeatherFile  
+{  
+	public static void main( <input id='blank0' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='8' onchange='sP3f6(0)'> args ) <input id='blank1' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='6' onchange='sP3f6(1)'> <input id='blank2' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='11' onchange='sP3f6(2)'> {  
+		Scanner scan = new Scanner( System.in );  
+		System.out.print( "파일이름을 입력하세요: " );  
+		<input id='blank3' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='6' onchange='sP3f6(3)'> filename = scan.next();  
+		<input id='blank4' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='14' onchange='sP3f6(4)'> inFile = new <input id='blank5' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='14' onchange='sP3f6(5)'>( new <input id='blank6' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='10' onchange='sP3f6(6)'>( new <input id='blank7' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(7)'>( filename ) ) );  
+	  
+		for( <input id='blank8' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='6' onchange='sP3f6(8)'> line; ( line = inFile.<input id='blank9' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='8' onchange='sP3f6(9)'>() ) <input id='blank10' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(10)'> <input id='blank11' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(11)'>; ) {  
+			<input id='blank12' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='8' onchange='sP3f6(12)'> data = line.<input id='blank13' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(13)'>( "\t" );  
+			<input id='blank14' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(14)'> ( data.<input id='blank15' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='6' onchange='sP3f6(15)'> == 17 ) {  
+				System.out.println( data[0]+ "월 " + data[1]+ "일 " + data[2]+ "요일 오늘의 날씨입니다." );  
+				System.out.println( "주요 지역의 아침 최저기온은 서울 " + data[5]+ "도, 춘천 " + data[6]+ "도, 대전 " + data[7]+ "도, 광주 " + data[8]+ "도, 부산 " + data[9]+ "도, 제주 " + data[10]+ "도입니다." );  
+				System.out.println( "낮 최고기온은 서울 " + data[11]+ "도, 춘천 " + data[12]+ "도, 대전 " + data[13]+ "도, 광주 " + data[14]+ "도, 부산 " + data[15]+ "도, 제주 " + data[16]+ "도입니다." );  
+				System.out.println( data[3]+ "가 발효 중인 지역에서는 " + data[4]+ " 운전에 주의해 주시기 바랍니다.\n" );  
+			}  
+			else {  
+				System.out.print( "(오류) 날짜별 날씨 정보을 읽어올 수 없습니다." );  
+				<input id='blank16' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(16)'>;  
+			}  
+		}  
+	  
+		inFile.close();  
+		scan.close();  
 	}  
-	 
-	public void connectAsClient( String serverIP, <input id='blank21' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='8' onchange='sP3f6(21)'> obj ) { 
-		<input id='blank22' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(22)'> { 
-			socket =  
-			         new <input id='blank23' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='6' onchange='sP3f6(23)'>( serverIP, serverPort );  
-			connectInOut( obj );	 
-		} <input id='blank24' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(24)'> ( Exception e ) { 
-			e.printStackTrace(); 
-		} 
-	} 
- 
-	public void connectInOut( <input id='blank25' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='8' onchange='sP3f6(25)'> obj ) { 
-		<input id='blank26' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(26)'> { 
-			in = new <input id='blank27' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='14' onchange='sP3f6(27)'>( new <input id='blank28' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='17' onchange='sP3f6(28)'>( socket.<input id='blank29' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='14' onchange='sP3f6(29)'>() )); 
-			out = new <input id='blank30' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='11' onchange='sP3f6(30)'>( socket.<input id='blank31' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='15' onchange='sP3f6(31)'>(), true ); 
-			waitForCounterpart = new <input id='blank32' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='6' onchange='sP3f6(32)'>( obj ); 
-			waitForCounterpart.<input id='blank33' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(33)'>(); 
-		} <input id='blank34' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(34)'> ( Exception e ) { 
-			e.printStackTrace(); 
-		} 
-	} 
-	 
-	public String read() { 
-		<input id='blank35' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(35)'> { 
-			<input id='blank36' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(36)'> ( this.isConnecting() == true ) 
-				return  
-				       in.<input id='blank37' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='8' onchange='sP3f6(37)'>(); 
-		} <input id='blank38' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(38)'> ( Exception e ) { 
-			e.printStackTrace(); 
-		} 
-		 
-		return null; 
-	} 
-	 
-	public void write( String data ) { 
-		<input id='blank39' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(39)'> { 
-			<input id='blank40' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(40)'> ( this.isConnecting() == true ) 
-				out.println( data ); 
-		} <input id='blank41' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(41)'> ( Exception e ) { 
-			e.printStackTrace(); 
-		}	 
-	} 
- 
-	public boolean isConnecting() { 
-		<input id='blank42' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(42)'> ( ( socket != null )  
-				&& ( in != null )  
-				&& ( out != null )  
-				&& ( waitForCounterpart != null )  
-				&& ( waitForCounterpart.getState() != <input id='blank43' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='6' onchange='sP3f6(43)'>.State.TERMINATED ) )    
-			return true; 
-		<input id='blank44' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='4' onchange='sP3f6(44)'>  
-			return false; 
-	} 
-	 
-	public void close() { 
-		<input id='blank45' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='3' onchange='sP3f6(45)'> { 
-			<input id='blank46' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(46)'> ( waitForCounterpart != null ) { 
-				waitForCounterpart.interrupt();	   
-				waitForCounterpart = null; 
-			} 
-			<input id='blank47' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(47)'> ( in != null ) { 
-				in.close(); 
-				in=null; 
-			}			 
-			<input id='blank48' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(48)'> ( out != null ) { 
-				out.flush(); 
-				out.close(); 
-				out = null; 
-			} 
-			<input id='blank49' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(49)'> ( socket != null ) { 
-				socket.close(); 
-				socket = null; 
-			} 
-			<input id='blank50' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='2' onchange='sP3f6(50)'> ( serverSocket != null ) { 
-				serverSocket.close(); 
-				serverSocket = null; 
-			} 
-		} <input id='blank51' type='text' style='background-color:Silver; border:0px;' required minlength='1' maxlength='30' size='5' onchange='sP3f6(51)'> ( Exception e ) { 
-			e.printStackTrace(); 
-		} 
-	} 
 } 	 			</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 		</div> 	</body> </html> 
